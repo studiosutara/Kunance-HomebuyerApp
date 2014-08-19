@@ -27,4 +27,4 @@ It is a native iOS application written completely in Objective-C. Uses
 @studiosutara and @modivinit
 
 ### License
-Kunanace application is available under the MIT license. See the LICENSE file for more info.
+Kunanace application is available under the GPL v3 license. See the LICENSE file for more info.

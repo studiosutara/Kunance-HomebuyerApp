@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeInfoEntryViewController">
+            <connections>
+                <outlet property="mAskingPriceField" destination="iKP-gr-hUk" id="IdF-6d-Jkf"/>
+                <outlet property="mBestHomeFeatureField" destination="78p-Dd-Eox" id="2nd-sC-Cdx"/>
+                <outlet property="mCondoButton" destination="eU6-Me-PZu" id="UYH-8t-6GE"/>
+                <outlet property="mDashboardIcon" destination="L0v-88-1pZ" id="Teu-a6-HXv"/>
+                <outlet property="mFormScrollView" destination="3ey-ie-M8m" id="ZgU-nd-Vo2"/>
+                <outlet property="mHelpButton" destination="1OW-FQ-8cy" id="NQj-Xp-a8E"/>
+                <outlet property="mHomeAddressButton" destination="K4D-gI-Ifx" id="OvW-kj-jPC"/>
+                <outlet property="mLoanInfoViewAsButton" destination="VGx-Q6-CjB" id="HVP-lV-xda"/>
+                <outlet property="mMontylyHOAField" destination="bmu-pZ-zaj" id="69t-Y3-VXD"/>
+                <outlet property="mShowHomePayments" destination="t7t-eR-fWu" id="kgF-SW-JP1"/>
+                <outlet property="mSingleFamilyButton" destination="LCl-lc-iVb" id="pMA-dn-mlZ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ey-ie-M8m">
+                    <rect key="frame" x="0.0" y="64" width="320" height="395"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-fp-W6J">
+                            <rect key="frame" x="20" y="111" width="280" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCl-lc-iVb" userLabel="Button - sfh">
+                            <rect key="frame" x="82" y="20" width="40" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="sfh-homeinfo.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sfhButtonTapped:" destination="-1" eventType="touchDown" id="wmD-rC-kZu"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R31-FL-7wb">
+                            <rect key="frame" x="60" y="83" width="84" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="BgF-Uk-nE8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU6-Me-PZu" userLabel="Button - condo">
+                            <rect key="frame" x="208" y="20" width="44" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="condo.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="condoButtonTapped:" destination="-1" eventType="touchDown" id="mg8-Lu-jVP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condo/Townhouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h8-dN-bMk">
+                            <rect key="frame" x="171" y="83" width="118" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="besthomefeature.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mfi-6Y-2Bn">
+                            <rect key="frame" x="20" y="143" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Nickname" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="105" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-n1-BWx">
+                            <rect key="frame" x="60" y="123" width="105" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do you remember the home?" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="78p-Dd-Eox">
+                            <rect key="frame" x="60" y="142" width="238" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Price" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="l1a-GT-WZD">
+                            <rect key="frame" x="60" y="195" width="74" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeprice.png" translatesAutoresizingMaskIntoConstraints="NO" id="V0e-pR-FMb">
+                            <rect key="frame" x="20" y="215" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="List or Asking Price" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iKP-gr-hUk" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="215" width="238" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Homeowner Assoc. Dues" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scy-kt-aDb">
+                            <rect key="frame" x="60" y="267" width="243" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoa.png" translatesAutoresizingMaskIntoConstraints="NO" id="lw4-7l-Jgl">
+                            <rect key="frame" x="20" y="287" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Optional. Dues vary by property." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-pZ-zaj" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="287" width="238" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="BDo-T5-dqj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select home type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGg-s9-RSh">
+                            <rect key="frame" x="60" y="7" width="110" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4D-gI-Ifx">
+                            <rect key="frame" x="60" y="339" width="240" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="Add Address"/>
+                            <connections>
+                                <action selector="enterHomeAddressButtonTapped" destination="-1" eventType="touchDown" id="piD-Lo-vpn"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city.png" translatesAutoresizingMaskIntoConstraints="NO" id="No1-Zn-Lu0">
+                            <rect key="frame" x="20" y="346" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="No1-Zn-Lu0" secondAttribute="bottom" constant="20" id="0J2-2d-rv4"/>
+                        <constraint firstItem="78p-Dd-Eox" firstAttribute="leading" secondItem="wK0-n1-BWx" secondAttribute="leading" id="0pB-3Z-s3E"/>
+                        <constraint firstItem="78p-Dd-Eox" firstAttribute="top" secondItem="wK0-n1-BWx" secondAttribute="bottom" constant="2" id="0qS-3c-nIH"/>
+                        <constraint firstAttribute="trailing" secondItem="5h8-dN-bMk" secondAttribute="trailing" constant="31" id="4BX-zj-jOQ"/>
+                        <constraint firstItem="Mfi-6Y-2Bn" firstAttribute="leading" secondItem="V0e-pR-FMb" secondAttribute="leading" id="7Ma-bJ-hXe"/>
+                        <constraint firstAttribute="trailing" secondItem="78p-Dd-Eox" secondAttribute="trailing" constant="22" id="7U9-2T-bik"/>
+                        <constraint firstItem="bmu-pZ-zaj" firstAttribute="leading" secondItem="Scy-kt-aDb" secondAttribute="leading" id="9LG-vK-WOe"/>
+                        <constraint firstItem="Mfi-6Y-2Bn" firstAttribute="trailing" secondItem="V0e-pR-FMb" secondAttribute="trailing" id="9Mo-bQ-qRS"/>
+                        <constraint firstItem="R31-FL-7wb" firstAttribute="centerY" secondItem="5h8-dN-bMk" secondAttribute="centerY" id="BR7-E4-0wh"/>
+                        <constraint firstItem="bqP-fp-W6J" firstAttribute="centerX" secondItem="3ey-ie-M8m" secondAttribute="centerX" id="CAk-Ti-lQI"/>
+                        <constraint firstItem="bmu-pZ-zaj" firstAttribute="trailing" secondItem="iKP-gr-hUk" secondAttribute="trailing" id="DYy-V4-agK"/>
+                        <constraint firstItem="wK0-n1-BWx" firstAttribute="top" secondItem="LCl-lc-iVb" secondAttribute="bottom" constant="23" id="Dca-q0-7Gz"/>
+                        <constraint firstItem="iKP-gr-hUk" firstAttribute="leading" secondItem="l1a-GT-WZD" secondAttribute="leading" id="Ksx-Ex-zjS"/>
+                        <constraint firstItem="78p-Dd-Eox" firstAttribute="leading" secondItem="Mfi-6Y-2Bn" secondAttribute="trailing" constant="11" id="LkA-J7-bLb"/>
+                        <constraint firstItem="LCl-lc-iVb" firstAttribute="centerX" secondItem="R31-FL-7wb" secondAttribute="centerX" id="Mmj-ks-JZr"/>
+                        <constraint firstItem="lw4-7l-Jgl" firstAttribute="top" secondItem="bmu-pZ-zaj" secondAttribute="top" id="Nel-6A-yuK"/>
+                        <constraint firstItem="bmu-pZ-zaj" firstAttribute="top" secondItem="Scy-kt-aDb" secondAttribute="bottom" constant="3" id="Pcf-UY-Fhu"/>
+                        <constraint firstAttribute="bottom" secondItem="K4D-gI-Ifx" secondAttribute="bottom" constant="12" id="PhT-lw-zl1"/>
+                        <constraint firstItem="V0e-pR-FMb" firstAttribute="top" secondItem="iKP-gr-hUk" secondAttribute="top" id="QdM-DE-Q2j"/>
+                        <constraint firstItem="iKP-gr-hUk" firstAttribute="top" secondItem="l1a-GT-WZD" secondAttribute="bottom" constant="3" id="QpG-Pc-h7k"/>
+                        <constraint firstItem="wK0-n1-BWx" firstAttribute="top" secondItem="R31-FL-7wb" secondAttribute="bottom" constant="20" id="TVf-05-yvN"/>
+                        <constraint firstItem="NGg-s9-RSh" firstAttribute="top" secondItem="3ey-ie-M8m" secondAttribute="top" constant="7" id="UrB-vZ-d3q"/>
+                        <constraint firstItem="eU6-Me-PZu" firstAttribute="leading" secondItem="R31-FL-7wb" secondAttribute="trailing" constant="64" id="XCO-mO-tvp"/>
+                        <constraint firstItem="5h8-dN-bMk" firstAttribute="leading" secondItem="R31-FL-7wb" secondAttribute="trailing" constant="27" id="Zew-ik-85a"/>
+                        <constraint firstItem="lw4-7l-Jgl" firstAttribute="leading" secondItem="No1-Zn-Lu0" secondAttribute="leading" id="aq8-wB-vqS"/>
+                        <constraint firstAttribute="trailing" secondItem="K4D-gI-Ifx" secondAttribute="trailing" constant="20" symbolic="YES" id="bgY-SS-Kd4"/>
+                        <constraint firstItem="lw4-7l-Jgl" firstAttribute="leading" secondItem="V0e-pR-FMb" secondAttribute="leading" id="bsF-b7-u01"/>
+                        <constraint firstItem="K4D-gI-Ifx" firstAttribute="leading" secondItem="bmu-pZ-zaj" secondAttribute="leading" id="ghC-dT-aKi"/>
+                        <constraint firstItem="K4D-gI-Ifx" firstAttribute="top" secondItem="bmu-pZ-zaj" secondAttribute="bottom" constant="22" id="hrU-5O-Gs5"/>
+                        <constraint firstItem="NGg-s9-RSh" firstAttribute="centerX" secondItem="3ey-ie-M8m" secondAttribute="centerX" constant="-45" id="iJz-Tp-z2I"/>
+                        <constraint firstAttribute="trailing" secondItem="Scy-kt-aDb" secondAttribute="trailing" constant="17" id="iR2-ao-ZDR"/>
+                        <constraint firstItem="bqP-fp-W6J" firstAttribute="top" secondItem="R31-FL-7wb" secondAttribute="bottom" constant="8" symbolic="YES" id="jCG-7i-EYr"/>
+                        <constraint firstItem="No1-Zn-Lu0" firstAttribute="top" secondItem="lw4-7l-Jgl" secondAttribute="bottom" constant="30" id="jT8-Qg-O09"/>
+                        <constraint firstItem="l1a-GT-WZD" firstAttribute="leading" secondItem="78p-Dd-Eox" secondAttribute="leading" id="jvU-2P-CbP"/>
+                        <constraint firstItem="eU6-Me-PZu" firstAttribute="centerX" secondItem="5h8-dN-bMk" secondAttribute="centerX" id="klq-AS-DWS"/>
+                        <constraint firstItem="Mfi-6Y-2Bn" firstAttribute="leading" secondItem="3ey-ie-M8m" secondAttribute="leading" constant="20" symbolic="YES" id="lDl-Kr-bIO"/>
+                        <constraint firstItem="eU6-Me-PZu" firstAttribute="top" secondItem="LCl-lc-iVb" secondAttribute="top" id="mCg-XR-77U"/>
+                        <constraint firstItem="LCl-lc-iVb" firstAttribute="top" secondItem="3ey-ie-M8m" secondAttribute="top" constant="20" symbolic="YES" id="mOe-0t-aSW"/>
+                        <constraint firstItem="LCl-lc-iVb" firstAttribute="baseline" secondItem="eU6-Me-PZu" secondAttribute="baseline" id="oAr-uJ-Tbs"/>
+                        <constraint firstItem="bqP-fp-W6J" firstAttribute="leading" secondItem="Mfi-6Y-2Bn" secondAttribute="leading" id="pMl-Rr-LiD"/>
+                        <constraint firstItem="iKP-gr-hUk" firstAttribute="trailing" secondItem="78p-Dd-Eox" secondAttribute="trailing" id="qsn-Ph-1Bv"/>
+                        <constraint firstItem="R31-FL-7wb" firstAttribute="top" secondItem="5h8-dN-bMk" secondAttribute="top" id="s0d-zW-SIO"/>
+                        <constraint firstItem="R31-FL-7wb" firstAttribute="leading" secondItem="3ey-ie-M8m" secondAttribute="leading" constant="60" id="t9G-Y9-j6E"/>
+                        <constraint firstItem="l1a-GT-WZD" firstAttribute="top" secondItem="78p-Dd-Eox" secondAttribute="bottom" constant="23" id="tON-lb-57C"/>
+                        <constraint firstItem="Scy-kt-aDb" firstAttribute="top" secondItem="iKP-gr-hUk" secondAttribute="bottom" constant="22" id="tZH-FO-Pex"/>
+                        <constraint firstItem="78p-Dd-Eox" firstAttribute="centerY" secondItem="Mfi-6Y-2Bn" secondAttribute="centerY" id="w1n-4h-16z"/>
+                        <constraint firstItem="Scy-kt-aDb" firstAttribute="leading" secondItem="iKP-gr-hUk" secondAttribute="leading" id="wFy-DX-n1d"/>
+                        <constraint firstItem="LCl-lc-iVb" firstAttribute="bottom" secondItem="eU6-Me-PZu" secondAttribute="bottom" id="z8w-eW-wEh"/>
+                        <constraint firstItem="5h8-dN-bMk" firstAttribute="top" secondItem="NGg-s9-RSh" secondAttribute="bottom" constant="59" id="zKP-WL-bvf"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGx-Q6-CjB">
+                    <rect key="frame" x="221" y="460" width="77" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bXm-J2-Q7W"/>
+                    </constraints>
+                    <state key="normal" image="loaninfo.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loanInfoButtonTapped:" destination="-1" eventType="touchDown" id="FQ3-v7-aYQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0v-88-1pZ" userLabel="Button -dash">
+                    <rect key="frame" x="14" y="510" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6xe-kh-BZJ"/>
+                        <constraint firstAttribute="width" constant="44" id="cHK-6D-9We"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="dashboard.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dashButtonTapped:" destination="-1" eventType="touchDown" id="eKM-vT-ppn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OW-FQ-8cy" userLabel="Button - help">
+                    <rect key="frame" x="270" y="511" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="O9y-hk-sUj"/>
+                        <constraint firstAttribute="height" constant="44" id="jDL-ci-8fO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="help.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="helpButtonTapped:" destination="-1" eventType="touchDown" id="1He-XF-1HX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7t-eR-fWu">
+                    <rect key="frame" x="175" y="459" width="123" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3or-0s-AEo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Home Cash Flow">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showHomePaymentsButtonTapped:" destination="-1" eventType="touchDown" id="orh-AY-xv0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3ey-ie-M8m" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="2NW-q7-lTI"/>
+                <constraint firstItem="1OW-FQ-8cy" firstAttribute="top" secondItem="t7t-eR-fWu" secondAttribute="bottom" constant="8" symbolic="YES" id="5tk-1h-AcX"/>
+                <constraint firstAttribute="trailing" secondItem="t7t-eR-fWu" secondAttribute="trailing" constant="22" id="Dbq-7U-ugM"/>
+                <constraint firstItem="L0v-88-1pZ" firstAttribute="top" secondItem="3ey-ie-M8m" secondAttribute="bottom" constant="51" id="Dfi-mu-7S9"/>
+                <constraint firstAttribute="bottom" secondItem="1OW-FQ-8cy" secondAttribute="bottom" constant="13" id="OTh-dE-dd9"/>
+                <constraint firstAttribute="bottom" secondItem="L0v-88-1pZ" secondAttribute="bottom" constant="14" id="SFw-yj-MUW"/>
+                <constraint firstAttribute="trailing" secondItem="1OW-FQ-8cy" secondAttribute="trailing" constant="6" id="Z3S-UA-AzR"/>
+                <constraint firstItem="1OW-FQ-8cy" firstAttribute="top" secondItem="VGx-Q6-CjB" secondAttribute="bottom" constant="7" id="lRZ-VW-6yR"/>
+                <constraint firstItem="t7t-eR-fWu" firstAttribute="trailing" secondItem="VGx-Q6-CjB" secondAttribute="trailing" id="r6o-ba-iaV"/>
+                <constraint firstAttribute="trailing" secondItem="3ey-ie-M8m" secondAttribute="trailing" id="vDV-d7-o2c"/>
+                <constraint firstItem="3ey-ie-M8m" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="zdh-CJ-4D5"/>
+                <constraint firstItem="L0v-88-1pZ" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="14" id="zxN-ux-GWu"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="besthomefeature.png" width="29" height="29"/>
+        <image name="city.png" width="29" height="29"/>
+        <image name="condo.png" width="40" height="40"/>
+        <image name="dashboard.png" width="30" height="30"/>
+        <image name="help.png" width="20" height="20"/>
+        <image name="hoa.png" width="29" height="29"/>
+        <image name="homeprice.png" width="29" height="29"/>
+        <image name="line.png" width="320" height="1"/>
+        <image name="loaninfo.png" width="77" height="22"/>
+        <image name="sfh-homeinfo.png" width="40" height="40"/>
+    </resources>
+</document>

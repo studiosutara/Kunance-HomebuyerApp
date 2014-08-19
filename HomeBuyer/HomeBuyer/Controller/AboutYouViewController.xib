@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutYouViewController">
+            <connections>
+                <outlet property="mAnnualGrossIncomeField" destination="Yhf-IU-clI" id="UA3-MP-ZsO"/>
+                <outlet property="mAnnualRetirementContributionField" destination="ciF-Ca-Yh5" id="l5u-xW-0N6"/>
+                <outlet property="mDashboardButton" destination="alK-zQ-Ryl" id="1GC-7d-vfx"/>
+                <outlet property="mFixedCostsButton" destination="z6K-tW-1wY" id="qcQ-m7-kdM"/>
+                <outlet property="mFormScrollView" destination="0bh-L2-Dwl" id="NFu-rL-FlB"/>
+                <outlet property="mHelpButton" destination="OIx-0A-DPH" id="Fed-ZH-MOc"/>
+                <outlet property="mMarriedButton" destination="h9c-Ke-iBq" id="qaL-2w-srg"/>
+                <outlet property="mNumberOfChildrenControl" destination="qYC-6V-4Ch" id="l7v-Kt-zem"/>
+                <outlet property="mSingleButton" destination="gR9-C7-As8" id="G2J-3g-Zk5"/>
+                <outlet property="view" destination="vpL-bZ-4vl" id="UKX-e8-QkF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vpL-bZ-4vl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bh-L2-Dwl">
+                    <rect key="frame" x="0.0" y="64" width="320" height="377"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rie-Xf-os8">
+                            <rect key="frame" x="20" y="120" width="280" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-uj-RTV">
+                            <rect key="frame" x="67" y="95" width="39" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Married" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G2-Bt-nFG">
+                            <rect key="frame" x="144" y="95" width="48" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR9-C7-As8" userLabel="Button - Single">
+                            <rect key="frame" x="60" y="32" width="52" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="single.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="singleButtonTapped:" destination="-1" eventType="touchDown" id="Plr-pc-C37"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-Ke-iBq" userLabel="Button - married">
+                            <rect key="frame" x="146" y="32" width="44" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="couple.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="marriedButtonTapped:" destination="-1" eventType="touchDown" id="rpW-IY-zng"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dependent Children" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDP-82-rzD">
+                            <rect key="frame" x="60" y="137" width="126" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your Marital Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-bj-7KW">
+                            <rect key="frame" x="60" y="20" width="162" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="children.png" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-5O-mfT">
+                            <rect key="frame" x="20" y="157" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-6V-4Ch">
+                            <rect key="frame" x="60" y="157" width="246" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="0"/>
+                                <segment title="1"/>
+                                <segment title="2"/>
+                                <segment title="3"/>
+                                <segment title="4"/>
+                                <segment title="5"/>
+                            </segments>
+                        </segmentedControl>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Combine all income sources." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yhf-IU-clI" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="237" width="234" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="next"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qzq-Xw-4a7">
+                            <rect key="frame" x="20" y="237" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Household Annual Gross Income" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="206" translatesAutoresizingMaskIntoConstraints="NO" id="bQE-do-UCn">
+                            <rect key="frame" x="60" y="217" width="206" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annual 401k, IRA, 403b Contribution" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="229" translatesAutoresizingMaskIntoConstraints="NO" id="dEi-zA-sdq">
+                            <rect key="frame" x="60" y="297" width="229" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add all deductible contributions." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-Ca-Yh5" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="317" width="229" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savings.png" translatesAutoresizingMaskIntoConstraints="NO" id="n69-af-RKE">
+                            <rect key="frame" x="20" y="317" width="34" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bQE-do-UCn" firstAttribute="leading" secondItem="Yhf-IU-clI" secondAttribute="leading" id="1M4-nF-hZ8"/>
+                        <constraint firstItem="gR9-C7-As8" firstAttribute="leading" secondItem="0bh-L2-Dwl" secondAttribute="leading" constant="60" id="4jo-dS-xVX"/>
+                        <constraint firstItem="w3A-5O-mfT" firstAttribute="leading" secondItem="0bh-L2-Dwl" secondAttribute="leading" constant="20" symbolic="YES" id="7HD-Fp-v5x"/>
+                        <constraint firstItem="Rie-Xf-os8" firstAttribute="leading" secondItem="w3A-5O-mfT" secondAttribute="leading" id="7MJ-Xb-aiB"/>
+                        <constraint firstItem="Yhf-IU-clI" firstAttribute="top" secondItem="bQE-do-UCn" secondAttribute="bottom" constant="3" id="8IF-7w-7m6"/>
+                        <constraint firstItem="ciF-Ca-Yh5" firstAttribute="top" secondItem="dEi-zA-sdq" secondAttribute="bottom" constant="3" id="8YM-Bg-Xkv"/>
+                        <constraint firstItem="n69-af-RKE" firstAttribute="leading" secondItem="Qzq-Xw-4a7" secondAttribute="leading" id="8ws-gi-1fg"/>
+                        <constraint firstItem="h9c-Ke-iBq" firstAttribute="baseline" secondItem="gR9-C7-As8" secondAttribute="baseline" id="E05-VD-W4o"/>
+                        <constraint firstItem="n69-af-RKE" firstAttribute="top" secondItem="ciF-Ca-Yh5" secondAttribute="top" id="ERV-GK-QMy"/>
+                        <constraint firstItem="gR9-C7-As8" firstAttribute="top" secondItem="0bh-L2-Dwl" secondAttribute="top" constant="32" id="FRV-cI-zJY"/>
+                        <constraint firstItem="qYC-6V-4Ch" firstAttribute="leading" secondItem="bQE-do-UCn" secondAttribute="leading" id="GH3-fX-NtX"/>
+                        <constraint firstItem="IDP-82-rzD" firstAttribute="top" secondItem="gR9-C7-As8" secondAttribute="bottom" constant="25" id="KZ4-mm-0wr"/>
+                        <constraint firstItem="h9c-Ke-iBq" firstAttribute="top" secondItem="gR9-C7-As8" secondAttribute="top" id="L4I-pt-xYN"/>
+                        <constraint firstItem="ciF-Ca-Yh5" firstAttribute="leading" secondItem="n69-af-RKE" secondAttribute="trailing" constant="6" id="Lyw-fk-vYR"/>
+                        <constraint firstItem="Qzq-Xw-4a7" firstAttribute="top" secondItem="Yhf-IU-clI" secondAttribute="top" id="Mw1-va-AJe"/>
+                        <constraint firstItem="dEi-zA-sdq" firstAttribute="trailing" secondItem="ciF-Ca-Yh5" secondAttribute="trailing" id="PDe-wf-5jb"/>
+                        <constraint firstItem="Rie-Xf-os8" firstAttribute="top" secondItem="gR9-C7-As8" secondAttribute="bottom" constant="8" symbolic="YES" id="Pmb-ds-e9G"/>
+                        <constraint firstAttribute="bottom" secondItem="ciF-Ca-Yh5" secondAttribute="bottom" constant="30" id="Sca-qo-8T0"/>
+                        <constraint firstItem="dEi-zA-sdq" firstAttribute="top" secondItem="Yhf-IU-clI" secondAttribute="bottom" constant="30" id="Uwg-VJ-89T"/>
+                        <constraint firstItem="w3A-5O-mfT" firstAttribute="leading" secondItem="Qzq-Xw-4a7" secondAttribute="leading" id="VL8-vK-tqh"/>
+                        <constraint firstItem="h9c-Ke-iBq" firstAttribute="centerX" secondItem="3G2-Bt-nFG" secondAttribute="centerX" id="VLM-wO-nXk"/>
+                        <constraint firstItem="dEi-zA-sdq" firstAttribute="leading" secondItem="ciF-Ca-Yh5" secondAttribute="leading" id="W5A-AW-PkW"/>
+                        <constraint firstItem="fAL-uj-RTV" firstAttribute="baseline" secondItem="3G2-Bt-nFG" secondAttribute="baseline" id="Xlh-Bo-Tgb"/>
+                        <constraint firstItem="h9c-Ke-iBq" firstAttribute="bottom" secondItem="3G2-Bt-nFG" secondAttribute="bottom" id="ZsY-DL-DF3"/>
+                        <constraint firstItem="gR9-C7-As8" firstAttribute="centerX" secondItem="fAL-uj-RTV" secondAttribute="centerX" id="aRq-Ib-xZh"/>
+                        <constraint firstItem="dEi-zA-sdq" firstAttribute="leading" secondItem="Yhf-IU-clI" secondAttribute="leading" id="c4j-VC-EHY"/>
+                        <constraint firstItem="qYC-6V-4Ch" firstAttribute="top" secondItem="IDP-82-rzD" secondAttribute="bottom" constant="3" id="duy-kf-aXo"/>
+                        <constraint firstItem="aQU-bj-7KW" firstAttribute="top" secondItem="0bh-L2-Dwl" secondAttribute="top" constant="20" symbolic="YES" id="gT0-ai-lbw"/>
+                        <constraint firstItem="3G2-Bt-nFG" firstAttribute="leading" secondItem="fAL-uj-RTV" secondAttribute="trailing" constant="38" id="hUT-89-peK"/>
+                        <constraint firstItem="bQE-do-UCn" firstAttribute="top" secondItem="qYC-6V-4Ch" secondAttribute="bottom" constant="32" id="hVF-eL-KCp"/>
+                        <constraint firstItem="aQU-bj-7KW" firstAttribute="centerX" secondItem="0bh-L2-Dwl" secondAttribute="centerX" constant="-19" id="hn2-oG-jmM"/>
+                        <constraint firstItem="qYC-6V-4Ch" firstAttribute="leading" secondItem="w3A-5O-mfT" secondAttribute="trailing" constant="11" id="jiz-Ja-r6c"/>
+                        <constraint firstItem="qYC-6V-4Ch" firstAttribute="leading" secondItem="IDP-82-rzD" secondAttribute="leading" id="l3u-GB-OhF"/>
+                        <constraint firstItem="gR9-C7-As8" firstAttribute="bottom" secondItem="fAL-uj-RTV" secondAttribute="bottom" id="mdf-eT-0HK"/>
+                        <constraint firstAttribute="trailing" secondItem="Yhf-IU-clI" secondAttribute="trailing" constant="26" id="nPL-Ga-5vo"/>
+                        <constraint firstItem="w3A-5O-mfT" firstAttribute="top" secondItem="qYC-6V-4Ch" secondAttribute="top" id="oGw-Re-fND"/>
+                        <constraint firstAttribute="trailing" secondItem="dEi-zA-sdq" secondAttribute="trailing" constant="31" id="qtn-8J-dqv"/>
+                        <constraint firstItem="Rie-Xf-os8" firstAttribute="centerX" secondItem="0bh-L2-Dwl" secondAttribute="centerX" id="r9K-W7-Dla"/>
+                        <constraint firstAttribute="trailing" secondItem="qYC-6V-4Ch" secondAttribute="trailing" constant="14" id="rax-d1-Ps6"/>
+                        <constraint firstItem="h9c-Ke-iBq" firstAttribute="leading" secondItem="gR9-C7-As8" secondAttribute="trailing" constant="34" id="rhI-19-oEP"/>
+                        <constraint firstItem="fAL-uj-RTV" firstAttribute="top" secondItem="aQU-bj-7KW" secondAttribute="bottom" constant="58" id="vLq-6C-KkS"/>
+                        <constraint firstItem="3G2-Bt-nFG" firstAttribute="leading" secondItem="gR9-C7-As8" secondAttribute="trailing" constant="32" id="vuk-kt-hOt"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6K-tW-1wY">
+                    <rect key="frame" x="200" y="452" width="100" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Suw-hK-euw"/>
+                        <constraint firstAttribute="width" constant="100" id="hHl-2x-0Ua"/>
+                    </constraints>
+                    <state key="normal" image="fixedcosts.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fixedCostsButtonTapped:" destination="-1" eventType="touchDown" id="j1S-te-0eh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alK-zQ-Ryl" userLabel="Button -dash">
+                    <rect key="frame" x="14" y="510" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0e4-8d-f98"/>
+                        <constraint firstAttribute="width" constant="44" id="VM4-WG-sY7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="dashboard.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dashButtonTapped:" destination="-1" eventType="touchDown" id="OhC-RJ-wku"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIx-0A-DPH" userLabel="Button - help">
+                    <rect key="frame" x="270" y="511" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="6Sp-gl-aED"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="help.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="helpButtonTapped:" destination="-1" eventType="touchDown" id="mJX-Zh-w7L"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OIx-0A-DPH" firstAttribute="top" secondItem="z6K-tW-1wY" secondAttribute="bottom" constant="15" id="7rJ-tf-XMk"/>
+                <constraint firstAttribute="bottom" secondItem="alK-zQ-Ryl" secondAttribute="bottom" constant="14" id="9F5-J8-8bp"/>
+                <constraint firstAttribute="trailing" secondItem="OIx-0A-DPH" secondAttribute="trailing" constant="6" id="BQh-RB-dWR"/>
+                <constraint firstAttribute="bottom" secondItem="OIx-0A-DPH" secondAttribute="bottom" constant="13" id="Ohp-G5-njQ"/>
+                <constraint firstItem="alK-zQ-Ryl" firstAttribute="top" secondItem="0bh-L2-Dwl" secondAttribute="bottom" constant="69" id="SRP-aq-diY"/>
+                <constraint firstAttribute="trailing" secondItem="0bh-L2-Dwl" secondAttribute="trailing" id="UBM-Dd-rPb"/>
+                <constraint firstAttribute="trailing" secondItem="z6K-tW-1wY" secondAttribute="trailing" constant="20" symbolic="YES" id="c61-w9-VTY"/>
+                <constraint firstItem="alK-zQ-Ryl" firstAttribute="leading" secondItem="vpL-bZ-4vl" secondAttribute="leading" constant="14" id="ies-Qw-xch"/>
+                <constraint firstItem="0bh-L2-Dwl" firstAttribute="top" secondItem="vpL-bZ-4vl" secondAttribute="top" constant="64" id="lvO-oc-b8w"/>
+                <constraint firstItem="z6K-tW-1wY" firstAttribute="top" secondItem="0bh-L2-Dwl" secondAttribute="bottom" constant="11" id="lyD-Kx-911"/>
+                <constraint firstItem="0bh-L2-Dwl" firstAttribute="leading" secondItem="vpL-bZ-4vl" secondAttribute="leading" id="mQy-H9-PqK"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="children.png" width="29" height="29"/>
+        <image name="couple.png" width="40" height="40"/>
+        <image name="dashboard.png" width="30" height="30"/>
+        <image name="fixedcosts.png" width="94" height="22"/>
+        <image name="help.png" width="20" height="20"/>
+        <image name="line.png" width="320" height="1"/>
+        <image name="salary.png" width="29" height="29"/>
+        <image name="savings.png" width="29" height="29"/>
+        <image name="single.png" width="40" height="40"/>
+    </resources>
+</document>

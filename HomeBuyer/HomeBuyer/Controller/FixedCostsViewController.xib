@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FixedCostsViewController">
+            <connections>
+                <outlet property="mAboutYouButton" destination="Q2A-g7-w3i" id="8TB-KH-ZUp"/>
+                <outlet property="mCurrentLifestyleIncomeButton" destination="oUv-T7-xI1" id="rfZ-FH-qt8"/>
+                <outlet property="mDashboardButton" destination="FlP-2P-ra7" id="uFR-J2-qwQ"/>
+                <outlet property="mFixedHealthCosts" destination="O9p-Pr-oTu" id="RZo-vz-rvQ"/>
+                <outlet property="mFixedOtherCosts" destination="PlV-fL-FUW" id="w9B-bv-kof"/>
+                <outlet property="mFixedTransportCosts" destination="yPw-EL-0xR" id="w1S-uH-XZa"/>
+                <outlet property="mFormScrollView" destination="ZAE-Ld-lbX" id="wQY-2J-oiU"/>
+                <outlet property="mHelpButton" destination="bFE-Rh-E22" id="5Xj-Sr-lrr"/>
+                <outlet property="mMonthlyCarPayments" destination="kVz-QE-aNR" id="szJ-WD-1HP"/>
+                <outlet property="mMonthlyHealthInsurancePayments" destination="sC3-Oz-C4M" id="gQZ-6q-fpt"/>
+                <outlet property="mMonthlyRent" destination="K0A-au-c27" id="ox3-Ta-z6h"/>
+                <outlet property="mOtherMonthlyPayments" destination="TbN-rU-OPw" id="7to-em-S7p"/>
+                <outlet property="view" destination="C6Q-Yb-CCX" id="2Ij-p5-SCH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="C6Q-Yb-CCX">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAE-Ld-lbX">
+                    <rect key="frame" x="0.0" y="64" width="320" height="377"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rent.png" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-PE-26f">
+                            <rect key="frame" x="20" y="40" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSh-kV-Yk6">
+                            <rect key="frame" x="60" y="20" width="30" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Helps compare rent vs. buy" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K0A-au-c27" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="40" width="238" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car.png" translatesAutoresizingMaskIntoConstraints="NO" id="v45-Tv-9jl">
+                            <rect key="frame" x="20" y="131" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transportation Costs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H9-eU-XDJ">
+                            <rect key="frame" x="60" y="111" width="131" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="59" translatesAutoresizingMaskIntoConstraints="NO" id="s7f-GW-46f">
+                            <rect key="frame" x="241" y="80" width="59" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <string key="text">Use Area
+Averages</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gas, insurance, lease" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kVz-QE-aNR" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="131" width="170" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthcare.png" translatesAutoresizingMaskIntoConstraints="NO" id="Idl-Xg-YAV">
+                            <rect key="frame" x="20" y="211" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Out of pocket, insurance" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sC3-Oz-C4M" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="211" width="170" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthcare Costs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-ug-X6T">
+                            <rect key="frame" x="60" y="191" width="108" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otherexpenses.png" translatesAutoresizingMaskIntoConstraints="NO" id="zAV-7K-ZJX">
+                            <rect key="frame" x="20" y="291" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cell phone, cable , Netflix" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-rU-OPw" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="291" width="170" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Fixed Costs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2M-vC-pHl">
+                            <rect key="frame" x="60" y="271" width="114" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yPw-EL-0xR">
+                            <rect key="frame" x="246" y="129" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O9p-Pr-oTu">
+                            <rect key="frame" x="246" y="209" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PlV-fL-FUW">
+                            <rect key="frame" x="246" y="289" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TbN-rU-OPw" secondAttribute="bottom" constant="56" id="02U-3s-lGs"/>
+                        <constraint firstItem="sC3-Oz-C4M" firstAttribute="top" secondItem="Idl-Xg-YAV" secondAttribute="top" id="2ea-nq-JRD"/>
+                        <constraint firstItem="NSh-kV-Yk6" firstAttribute="top" secondItem="ZAE-Ld-lbX" secondAttribute="top" constant="20" id="2w8-kB-piw"/>
+                        <constraint firstItem="TbN-rU-OPw" firstAttribute="top" secondItem="P2M-vC-pHl" secondAttribute="bottom" constant="3" id="31v-CL-yOl"/>
+                        <constraint firstItem="cQF-ug-X6T" firstAttribute="leading" secondItem="sC3-Oz-C4M" secondAttribute="leading" id="6NZ-dt-FEg"/>
+                        <constraint firstItem="P2M-vC-pHl" firstAttribute="leading" secondItem="sC3-Oz-C4M" secondAttribute="leading" id="6cF-be-qg0"/>
+                        <constraint firstItem="K0A-au-c27" firstAttribute="top" secondItem="NSh-kV-Yk6" secondAttribute="bottom" constant="3" id="6wS-Qx-xVJ"/>
+                        <constraint firstItem="sC3-Oz-C4M" firstAttribute="trailing" secondItem="kVz-QE-aNR" secondAttribute="trailing" id="9fp-wV-gHP"/>
+                        <constraint firstItem="eU3-PE-26f" firstAttribute="top" secondItem="K0A-au-c27" secondAttribute="top" id="B2p-8l-RZa"/>
+                        <constraint firstItem="TbN-rU-OPw" firstAttribute="leading" secondItem="P2M-vC-pHl" secondAttribute="leading" id="CKh-qt-74g"/>
+                        <constraint firstItem="s7f-GW-46f" firstAttribute="leading" secondItem="ZAE-Ld-lbX" secondAttribute="leading" constant="241" id="D0t-dx-AQL"/>
+                        <constraint firstItem="O9p-Pr-oTu" firstAttribute="bottom" secondItem="Idl-Xg-YAV" secondAttribute="bottom" id="D33-lT-f58"/>
+                        <constraint firstItem="yPw-EL-0xR" firstAttribute="bottom" secondItem="v45-Tv-9jl" secondAttribute="bottom" id="GRG-Xc-9NN"/>
+                        <constraint firstItem="O9p-Pr-oTu" firstAttribute="trailing" secondItem="yPw-EL-0xR" secondAttribute="trailing" id="H5r-UE-wLM"/>
+                        <constraint firstItem="P2M-vC-pHl" firstAttribute="top" secondItem="sC3-Oz-C4M" secondAttribute="bottom" constant="30" id="L5F-Jo-O5l"/>
+                        <constraint firstItem="K0A-au-c27" firstAttribute="leading" secondItem="NSh-kV-Yk6" secondAttribute="leading" id="Mcv-o5-SpY"/>
+                        <constraint firstItem="kVz-QE-aNR" firstAttribute="leading" secondItem="3H9-eU-XDJ" secondAttribute="leading" id="NC5-1U-BB3"/>
+                        <constraint firstItem="K0A-au-c27" firstAttribute="leading" secondItem="3H9-eU-XDJ" secondAttribute="leading" id="Oas-TP-yZS"/>
+                        <constraint firstItem="sC3-Oz-C4M" firstAttribute="top" secondItem="cQF-ug-X6T" secondAttribute="bottom" constant="3" id="Pq7-dt-THS"/>
+                        <constraint firstItem="yPw-EL-0xR" firstAttribute="centerX" secondItem="s7f-GW-46f" secondAttribute="centerX" id="UP1-bs-4Hn"/>
+                        <constraint firstItem="PlV-fL-FUW" firstAttribute="trailing" secondItem="O9p-Pr-oTu" secondAttribute="trailing" id="XdW-V3-Ctj"/>
+                        <constraint firstItem="kVz-QE-aNR" firstAttribute="top" secondItem="3H9-eU-XDJ" secondAttribute="bottom" constant="3" id="YJ0-xJ-vTD"/>
+                        <constraint firstItem="O9p-Pr-oTu" firstAttribute="leading" secondItem="PlV-fL-FUW" secondAttribute="leading" id="YJg-cV-PIU"/>
+                        <constraint firstItem="K0A-au-c27" firstAttribute="leading" secondItem="eU3-PE-26f" secondAttribute="trailing" constant="11" id="YSj-pk-5Si"/>
+                        <constraint firstAttribute="trailing" secondItem="s7f-GW-46f" secondAttribute="trailing" constant="20" symbolic="YES" id="YTG-Ub-GW7"/>
+                        <constraint firstItem="kVz-QE-aNR" firstAttribute="leading" secondItem="cQF-ug-X6T" secondAttribute="leading" id="Yak-WZ-IVk"/>
+                        <constraint firstItem="yPw-EL-0xR" firstAttribute="leading" secondItem="O9p-Pr-oTu" secondAttribute="leading" id="ZhZ-Wm-Xyz"/>
+                        <constraint firstItem="sC3-Oz-C4M" firstAttribute="trailing" secondItem="TbN-rU-OPw" secondAttribute="trailing" id="a0k-Xy-t6q"/>
+                        <constraint firstItem="PlV-fL-FUW" firstAttribute="bottom" secondItem="zAV-7K-ZJX" secondAttribute="bottom" id="dPS-ic-cFX"/>
+                        <constraint firstItem="yPw-EL-0xR" firstAttribute="leading" secondItem="kVz-QE-aNR" secondAttribute="trailing" constant="16" id="eTm-Eb-awZ"/>
+                        <constraint firstItem="3H9-eU-XDJ" firstAttribute="top" secondItem="K0A-au-c27" secondAttribute="bottom" constant="41" id="fGA-cU-8Id"/>
+                        <constraint firstItem="zAV-7K-ZJX" firstAttribute="top" secondItem="TbN-rU-OPw" secondAttribute="top" id="fJ1-Lk-cds"/>
+                        <constraint firstAttribute="trailing" secondItem="K0A-au-c27" secondAttribute="trailing" constant="22" id="h6i-k8-zZt"/>
+                        <constraint firstItem="eU3-PE-26f" firstAttribute="leading" secondItem="ZAE-Ld-lbX" secondAttribute="leading" constant="20" symbolic="YES" id="hPU-FX-6cx"/>
+                        <constraint firstItem="NSh-kV-Yk6" firstAttribute="leading" secondItem="ZAE-Ld-lbX" secondAttribute="leading" constant="60" id="ldp-a2-sLv"/>
+                        <constraint firstItem="cQF-ug-X6T" firstAttribute="top" secondItem="kVz-QE-aNR" secondAttribute="bottom" constant="30" id="qjr-D8-70o"/>
+                        <constraint firstItem="s7f-GW-46f" firstAttribute="top" secondItem="K0A-au-c27" secondAttribute="bottom" constant="10" id="qkd-6w-w6z"/>
+                        <constraint firstItem="zAV-7K-ZJX" firstAttribute="leading" secondItem="Idl-Xg-YAV" secondAttribute="leading" id="tgZ-g3-MqD"/>
+                        <constraint firstAttribute="trailing" secondItem="NSh-kV-Yk6" secondAttribute="trailing" constant="230" id="ufq-Gv-bIS"/>
+                        <constraint firstItem="K0A-au-c27" firstAttribute="trailing" secondItem="kVz-QE-aNR" secondAttribute="trailing" constant="68" id="uv0-5g-Tzb"/>
+                        <constraint firstItem="v45-Tv-9jl" firstAttribute="leading" secondItem="eU3-PE-26f" secondAttribute="leading" id="y84-c8-NSD"/>
+                        <constraint firstItem="v45-Tv-9jl" firstAttribute="top" secondItem="kVz-QE-aNR" secondAttribute="top" id="yAt-w6-bh7"/>
+                        <constraint firstItem="Idl-Xg-YAV" firstAttribute="leading" secondItem="v45-Tv-9jl" secondAttribute="leading" id="zbK-JG-tuq"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-g7-w3i" userLabel="Button- about you">
+                    <rect key="frame" x="20" y="453" width="85" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="weT-Hn-EpE"/>
+                    </constraints>
+                    <state key="normal" image="aboutyou.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="aboutYouButtonTapped:" destination="-1" eventType="touchDown" id="TVr-hc-jGO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUv-T7-xI1">
+                    <rect key="frame" x="186" y="453" width="114" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="View Cash Flow">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="currentLifeStyleIncomeTapped:" destination="-1" eventType="touchDown" id="kvF-mh-HvR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlP-2P-ra7" userLabel="Button -dash">
+                    <rect key="frame" x="14" y="510" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="AtN-lw-rxy"/>
+                        <constraint firstAttribute="width" constant="44" id="ieF-Tu-0g3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="dashboard.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dashButtonTapped:" destination="-1" eventType="touchDown" id="cQ1-lc-Bvw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFE-Rh-E22" userLabel="Button - help">
+                    <rect key="frame" x="270" y="511" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="0av-6T-koz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="help.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="helpButtonTapped:" destination="-1" eventType="touchDown" id="EVY-Th-FUi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bFE-Rh-E22" firstAttribute="top" secondItem="oUv-T7-xI1" secondAttribute="bottom" constant="14" id="04X-ye-dyl"/>
+                <constraint firstItem="oUv-T7-xI1" firstAttribute="top" secondItem="Q2A-g7-w3i" secondAttribute="top" id="0fm-vp-KOa"/>
+                <constraint firstItem="ZAE-Ld-lbX" firstAttribute="top" secondItem="C6Q-Yb-CCX" secondAttribute="top" constant="64" id="7FA-Px-sEY"/>
+                <constraint firstItem="Q2A-g7-w3i" firstAttribute="leading" secondItem="C6Q-Yb-CCX" secondAttribute="leading" constant="20" symbolic="YES" id="7yz-yg-vGx"/>
+                <constraint firstAttribute="bottom" secondItem="FlP-2P-ra7" secondAttribute="bottom" constant="14" id="Ghl-O7-VZa"/>
+                <constraint firstItem="ZAE-Ld-lbX" firstAttribute="leading" secondItem="C6Q-Yb-CCX" secondAttribute="leading" id="KWg-AW-Nzg"/>
+                <constraint firstAttribute="trailing" secondItem="oUv-T7-xI1" secondAttribute="trailing" constant="20" symbolic="YES" id="Knp-CM-wlb"/>
+                <constraint firstItem="FlP-2P-ra7" firstAttribute="top" secondItem="Q2A-g7-w3i" secondAttribute="bottom" constant="13" id="Q71-ho-i5U"/>
+                <constraint firstItem="FlP-2P-ra7" firstAttribute="leading" secondItem="C6Q-Yb-CCX" secondAttribute="leading" constant="14" id="Xe3-At-tH0"/>
+                <constraint firstAttribute="bottom" secondItem="bFE-Rh-E22" secondAttribute="bottom" constant="13" id="ZjQ-Y9-1gA"/>
+                <constraint firstItem="oUv-T7-xI1" firstAttribute="bottom" secondItem="Q2A-g7-w3i" secondAttribute="bottom" id="eOX-du-rWv"/>
+                <constraint firstAttribute="trailing" secondItem="bFE-Rh-E22" secondAttribute="trailing" constant="6" id="pjN-Ex-ZZg"/>
+                <constraint firstAttribute="trailing" secondItem="ZAE-Ld-lbX" secondAttribute="trailing" id="vyR-lH-V9o"/>
+                <constraint firstItem="oUv-T7-xI1" firstAttribute="top" secondItem="ZAE-Ld-lbX" secondAttribute="bottom" constant="12" id="xhY-QN-QR2"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutyou.png" width="85" height="22"/>
+        <image name="car.png" width="29" height="29"/>
+        <image name="dashboard.png" width="30" height="30"/>
+        <image name="healthcare.png" width="29" height="29"/>
+        <image name="help.png" width="20" height="20"/>
+        <image name="otherexpenses.png" width="29" height="29"/>
+        <image name="rent.png" width="29" height="29"/>
+    </resources>
+</document>

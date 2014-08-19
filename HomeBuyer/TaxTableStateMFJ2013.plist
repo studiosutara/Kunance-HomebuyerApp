@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>limitsDifference</key>
+		<real>15164</real>
+		<key>percentage</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<integer>20788</integer>
+		<key>percentage</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<real>20790</real>
+		<key>percentage</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<real>22026</real>
+		<key>percentage</key>
+		<integer>6</integer>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<integer>20780</integer>
+		<key>percentage</key>
+		<integer>8</integer>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<integer>408952</integer>
+		<key>percentage</key>
+		<real>9.300000000000001</real>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<integer>101700</integer>
+		<key>percentage</key>
+		<real>10.3</real>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<integer>406800</integer>
+		<key>percentage</key>
+		<real>11.3</real>
+	</dict>
+	<dict>
+		<key>limitsDifference</key>
+		<real>1017000</real>
+		<key>percentage</key>
+		<real>12.3</real>
+	</dict>
+</array>
+</plist>

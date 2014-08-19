@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MarriedDeductionCaliforniaState</key>
+	<integer>7812</integer>
+	<key>SingleDeductionCaliforniaState</key>
+	<integer>3906</integer>
+	<key>MarriedDeductionFederal</key>
+	<integer>12200</integer>
+	<key>SingleDeductionFederal</key>
+	<integer>6100</integer>
+	<key>MarriedExemptionCaliforniaState</key>
+	<integer>212</integer>
+	<key>SingleExemptionCaliforniaState</key>
+	<integer>106</integer>
+	<key>ChildrenExemptionCaliforniaState</key>
+	<integer>326</integer>
+	<key>MarriedExemptionFederal</key>
+	<integer>7800</integer>
+	<key>SingleExemptionFederal</key>
+	<integer>3900</integer>
+	<key>ChildrenExemptionFederal</key>
+	<integer>3900</integer>
+	<key>ChildTaxCreditFederal</key>
+	<integer>1000</integer>
+</dict>
+</plist>

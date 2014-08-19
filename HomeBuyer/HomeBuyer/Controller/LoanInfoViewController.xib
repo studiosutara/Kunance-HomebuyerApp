@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoanInfoViewController">
+            <connections>
+                <outlet property="mCompareHomesButton" destination="66r-49-Rek" id="0iD-Y7-ufW"/>
+                <outlet property="mDashboardIcon" destination="n03-QE-UVj" id="VYg-Yh-9mB"/>
+                <outlet property="mDownPaymentFixedAmountField" destination="tNB-de-x9o" id="McC-WO-ngn"/>
+                <outlet property="mDownPaymentPercentageField" destination="giM-se-Flf" id="lb7-8F-waY"/>
+                <outlet property="mFormScrollView" destination="9iZ-cW-OPA" id="rgV-ah-B67"/>
+                <outlet property="mHelpButton" destination="MKR-c9-JqK" id="Ohv-Sn-Qv8"/>
+                <outlet property="mHomeInfoButton" destination="BZq-0X-5eH" id="NEr-WY-WuM"/>
+                <outlet property="mInterestRateField" destination="mFr-ni-Jnj" id="oWS-Ul-5ne"/>
+                <outlet property="mLoanDurationField" destination="2w0-g4-lWU" id="cpo-M6-Y79"/>
+                <outlet property="mPercentDollarValueChoice" destination="nRo-UY-YmA" id="iRR-PT-NfJ"/>
+                <outlet property="mShowHomePaymentsButton" destination="GbT-iR-R3k" id="GyF-vy-ryH"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iZ-cW-OPA">
+                    <rect key="frame" x="0.0" y="64" width="320" height="377"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common across all prospective homes." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-60-xPE">
+                            <rect key="frame" x="36" y="14" width="248" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downpayment.png" translatesAutoresizingMaskIntoConstraints="NO" id="N1w-d9-GMC">
+                            <rect key="frame" x="20" y="75" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Down Payment" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="156" translatesAutoresizingMaskIntoConstraints="NO" id="036-cK-j7k">
+                            <rect key="frame" x="60" y="55" width="156" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fixed $ amount" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tNB-de-x9o" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="130" y="75" width="170" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% of home price" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="giM-se-Flf" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="130" y="75" width="170" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interestrate.png" translatesAutoresizingMaskIntoConstraints="NO" id="bur-mR-dDn">
+                            <rect key="frame" x="20" y="155" width="29" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Interest Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-6B-DaI">
+                            <rect key="frame" x="60" y="136" width="115" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% value such as 3.75" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mFr-ni-Jnj" customClass="TSCurrencyTextField">
+                            <rect key="frame" x="60" y="155" width="238" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nRo-UY-YmA">
+                            <rect key="frame" x="60" y="75" width="60" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="GV1-v5-9bK"/>
+                            </constraints>
+                            <segments>
+                                <segment title="$"/>
+                                <segment title="%"/>
+                            </segments>
+                        </segmentedControl>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loantime.png" translatesAutoresizingMaskIntoConstraints="NO" id="NRd-RZ-FRa">
+                            <rect key="frame" x="20" y="233" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loan Term (years)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adi-as-o2y">
+                            <rect key="frame" x="60" y="213" width="111" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="2w0-g4-lWU">
+                            <rect key="frame" x="60" y="233" width="238" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="10"/>
+                                <segment title="15"/>
+                                <segment title="20"/>
+                                <segment title="30"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mFr-ni-Jnj" secondAttribute="trailing" constant="22" id="06l-CC-YIa"/>
+                        <constraint firstItem="036-cK-j7k" firstAttribute="top" secondItem="Tf8-60-xPE" secondAttribute="bottom" constant="24" id="8ha-gX-FLW"/>
+                        <constraint firstItem="Tf8-60-xPE" firstAttribute="centerX" secondItem="9iZ-cW-OPA" secondAttribute="centerX" id="CJT-bP-e10"/>
+                        <constraint firstItem="giM-se-Flf" firstAttribute="leading" secondItem="nRo-UY-YmA" secondAttribute="trailing" constant="10" id="Ch7-OK-22L"/>
+                        <constraint firstItem="giM-se-Flf" firstAttribute="trailing" secondItem="tNB-de-x9o" secondAttribute="trailing" id="JwA-bU-Rwv"/>
+                        <constraint firstItem="giM-se-Flf" firstAttribute="baseline" secondItem="tNB-de-x9o" secondAttribute="baseline" id="KYX-50-sHe"/>
+                        <constraint firstItem="bur-mR-dDn" firstAttribute="bottom" secondItem="mFr-ni-Jnj" secondAttribute="bottom" id="LEl-cI-Icg"/>
+                        <constraint firstItem="bur-mR-dDn" firstAttribute="top" secondItem="mFr-ni-Jnj" secondAttribute="top" id="O54-Te-OtK"/>
+                        <constraint firstAttribute="trailing" secondItem="giM-se-Flf" secondAttribute="trailing" constant="20" symbolic="YES" id="PVt-Cb-yA5"/>
+                        <constraint firstItem="nRo-UY-YmA" firstAttribute="leading" secondItem="N1w-d9-GMC" secondAttribute="trailing" constant="11" id="RgS-Ja-1Sj"/>
+                        <constraint firstItem="Tf8-60-xPE" firstAttribute="top" secondItem="9iZ-cW-OPA" secondAttribute="top" constant="14" id="Uc1-dt-A5W"/>
+                        <constraint firstAttribute="trailing" secondItem="Tf8-60-xPE" secondAttribute="trailing" constant="36" id="WDh-E2-XUb"/>
+                        <constraint firstItem="nRo-UY-YmA" firstAttribute="leading" secondItem="r9w-6B-DaI" secondAttribute="leading" id="Xhq-DR-2Ij"/>
+                        <constraint firstItem="nRo-UY-YmA" firstAttribute="top" secondItem="tNB-de-x9o" secondAttribute="top" id="YhA-pW-RSa"/>
+                        <constraint firstItem="bur-mR-dDn" firstAttribute="leading" secondItem="N1w-d9-GMC" secondAttribute="leading" id="aWO-3S-UDa"/>
+                        <constraint firstItem="mFr-ni-Jnj" firstAttribute="leading" secondItem="r9w-6B-DaI" secondAttribute="leading" id="g7V-Zw-Xgt"/>
+                        <constraint firstItem="mFr-ni-Jnj" firstAttribute="top" secondItem="r9w-6B-DaI" secondAttribute="bottom" constant="2" id="jil-wk-N1D"/>
+                        <constraint firstItem="N1w-d9-GMC" firstAttribute="top" secondItem="nRo-UY-YmA" secondAttribute="top" id="owR-6a-WdI"/>
+                        <constraint firstItem="nRo-UY-YmA" firstAttribute="top" secondItem="036-cK-j7k" secondAttribute="bottom" constant="3" id="q3O-cS-0nJ"/>
+                        <constraint firstItem="N1w-d9-GMC" firstAttribute="leading" secondItem="9iZ-cW-OPA" secondAttribute="leading" constant="20" symbolic="YES" id="rTp-4N-g0Y"/>
+                        <constraint firstItem="giM-se-Flf" firstAttribute="leading" secondItem="tNB-de-x9o" secondAttribute="leading" id="wX4-vh-eP4"/>
+                        <constraint firstItem="nRo-UY-YmA" firstAttribute="leading" secondItem="036-cK-j7k" secondAttribute="leading" id="wp3-R8-Njo"/>
+                        <constraint firstItem="r9w-6B-DaI" firstAttribute="top" secondItem="giM-se-Flf" secondAttribute="bottom" constant="31" id="zJP-dJ-CAv"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66r-49-Rek">
+                    <rect key="frame" x="233" y="451" width="67" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Compare">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="compareHomeButtonTapped:" destination="-1" eventType="touchDown" id="pOs-be-1YW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZq-0X-5eH" userLabel="Button - home info">
+                    <rect key="frame" x="20" y="452" width="85" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="homeinfo.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="homeInfoButtonTapped:" destination="-1" eventType="touchDown" id="wYI-J1-tdK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbT-iR-R3k">
+                    <rect key="frame" x="224" y="451" width="76" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qoc-Jf-YJB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Cash Flow">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showHomePaymentButtonTapped:" destination="-1" eventType="touchDown" id="UKP-K2-zxR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n03-QE-UVj" userLabel="Button -dash">
+                    <rect key="frame" x="14" y="510" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6kJ-Qo-plV"/>
+                        <constraint firstAttribute="width" constant="44" id="bFT-4f-tcO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="dashboard.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dashButtonTapped:" destination="-1" eventType="touchDown" id="R0Y-YU-UaB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKR-c9-JqK" userLabel="Button - help">
+                    <rect key="frame" x="270" y="511" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ROR-1Y-vaR"/>
+                        <constraint firstAttribute="height" constant="44" id="yRP-mf-6Lf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="help.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="helpButtonTapped:" destination="-1" eventType="touchDown" id="M3F-6d-Vwc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MKR-c9-JqK" firstAttribute="top" secondItem="GbT-iR-R3k" secondAttribute="bottom" constant="16" id="6or-kN-mDE"/>
+                <constraint firstAttribute="trailing" secondItem="9iZ-cW-OPA" secondAttribute="trailing" id="LBp-Hw-STA"/>
+                <constraint firstAttribute="bottom" secondItem="MKR-c9-JqK" secondAttribute="bottom" constant="13" id="P2I-9W-DLr"/>
+                <constraint firstAttribute="trailing" secondItem="66r-49-Rek" secondAttribute="trailing" constant="20" symbolic="YES" id="Q5q-Fi-h8B"/>
+                <constraint firstItem="GbT-iR-R3k" firstAttribute="top" secondItem="9iZ-cW-OPA" secondAttribute="bottom" constant="10" id="SXw-al-l6C"/>
+                <constraint firstAttribute="trailing" secondItem="MKR-c9-JqK" secondAttribute="trailing" constant="6" id="TXN-1n-U7L"/>
+                <constraint firstItem="GbT-iR-R3k" firstAttribute="trailing" secondItem="66r-49-Rek" secondAttribute="trailing" id="Ybn-Gy-9Ht"/>
+                <constraint firstItem="9iZ-cW-OPA" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="ZKJ-Ik-GRE"/>
+                <constraint firstAttribute="bottom" secondItem="n03-QE-UVj" secondAttribute="bottom" constant="14" id="cPB-f1-EeA"/>
+                <constraint firstItem="n03-QE-UVj" firstAttribute="top" secondItem="BZq-0X-5eH" secondAttribute="bottom" constant="14" id="cZx-Fs-V1s"/>
+                <constraint firstItem="n03-QE-UVj" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="14" id="ewW-O7-br9"/>
+                <constraint firstItem="GbT-iR-R3k" firstAttribute="bottom" secondItem="66r-49-Rek" secondAttribute="bottom" id="j1X-eF-3oV"/>
+                <constraint firstItem="BZq-0X-5eH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="mCC-4R-qYn"/>
+                <constraint firstItem="BZq-0X-5eH" firstAttribute="top" secondItem="9iZ-cW-OPA" secondAttribute="bottom" constant="11" id="srF-fs-LQK"/>
+                <constraint firstItem="GbT-iR-R3k" firstAttribute="top" secondItem="66r-49-Rek" secondAttribute="top" id="uPp-qW-mq0"/>
+                <constraint firstItem="9iZ-cW-OPA" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="v9R-nq-TSb"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dashboard.png" width="30" height="30"/>
+        <image name="downpayment.png" width="29" height="29"/>
+        <image name="help.png" width="20" height="20"/>
+        <image name="homeinfo.png" width="85" height="22"/>
+        <image name="interestrate.png" width="29" height="29"/>
+        <image name="loantime.png" width="29" height="29"/>
+    </resources>
+</document>

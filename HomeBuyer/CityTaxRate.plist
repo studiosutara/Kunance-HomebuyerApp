@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Gilroy</key>
+	<real>1.22</real>
+	<key>Los Gatos</key>
+	<real>1.18</real>
+	<key>Morgan Hill</key>
+	<real>1.21</real>
+	<key>Mountain View</key>
+	<real>1.15</real>
+	<key>Palo Alto</key>
+	<real>1.17</real>
+	<key>Santa Clara</key>
+	<real>1.15</real>
+	<key>Sunnyvale</key>
+	<real>1.15</real>
+	<key>Campbell</key>
+	<real>1.15</real>
+	<key>Los Altos</key>
+	<real>1.16</real>
+	<key>Cupertino</key>
+	<real>1.16</real>
+	<key>Los Altos Hills</key>
+	<real>1.15</real>
+	<key>Saratoga</key>
+	<real>1.16</real>
+	<key>Monte Sereno</key>
+	<real>1.18</real>
+	<key>San Jose</key>
+	<real>1.22</real>
+	<key>Alum Rock</key>
+	<real>1.27</real>
+	<key>Berryessa</key>
+	<real>1.2</real>
+	<key>Cambrian</key>
+	<real>1.12</real>
+	<key>Evergreen</key>
+	<real>1.21</real>
+	<key>Franklin-McKinley</key>
+	<real>1.26</real>
+	<key>Loma Prieta</key>
+	<real>1.13</real>
+	<key>Lakeside</key>
+	<real>1.13</real>
+	<key>Milpitas</key>
+	<real>1.14</real>
+	<key>Mt. Pleasant</key>
+	<real>1.25</real>
+	<key>Oak Grove</key>
+	<real>1.19</real>
+	<key>Carlsbad</key>
+	<real>1.08</real>
+	<key>Chula Vista</key>
+	<real>1.13</real>
+	<key>Coronado</key>
+	<real>1.05</real>
+	<key>Del Mar</key>
+	<real>1.01</real>
+	<key>El Cajon</key>
+	<real>1.18</real>
+	<key>Encinitas</key>
+	<real>1.04</real>
+	<key>Escondido</key>
+	<real>1.14</real>
+	<key>Imperial Beach</key>
+	<real>1.14</real>
+	<key>La Mesa</key>
+	<real>1.17</real>
+	<key>Lemon Grove</key>
+	<real>1.18</real>
+	<key>National City</key>
+	<real>1.11</real>
+	<key>Oceanside</key>
+	<real>1.06</real>
+	<key>Poway</key>
+	<real>1.1</real>
+	<key>San Diego</key>
+	<real>1.11</real>
+	<key>San Francisco</key>
+	<real>1.1691</real>
+	<key>San Marcos</key>
+	<real>1.08</real>
+	<key>Santee</key>
+	<real>1.15</real>
+	<key>Solana Beach</key>
+	<real>1</real>
+	<key>Vista</key>
+	<real>1.09</real>
+</dict>
+</plist>
